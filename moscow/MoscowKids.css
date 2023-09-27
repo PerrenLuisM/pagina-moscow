@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+body{
+    
+    font-family: 'Roboto',sans-serif;
+    margin: 0;
+}
+
+.container{
+    height: 96px;
+    max-width: 2000px;
+    margin: 0;
+
+}
+
+header{
+    background-color: rgb(255, 165, 165);
+}
+
+.logo{
+    margin: 0;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+}
+
+header nav{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+header a {
+    padding: 25px 100px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(111, 111, 111);
+    font-size: 2em;
+        
+}
+
+
+header a:hover{
+    color: #ffffff;
+}
+
+#present{
+    background-color: #f3fff6;
+    height: 591px;
+    
+}
+
+
+
+#present .container{
+    text-align: center;
+    margin: 0;
+
+}
+
+#prendas{
+    background-color: rgb(60, 60, 60);
+    color: white;
+}
+
+#prendas .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(100, 234, 255);
+}
+
+.carta{
+    margin: 20px;
+    width: 500px;
+    height: 600px;
+    border-radius: 5px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.8);
+    transition: .5s;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 143, 199, 0.229);
+    opacity: 0;
+    transition: .5s;
+}
+
+.content h2,a{
+    color: rgba(255, 255, 255, .8);
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.carta:hover .content {
+    opacity: 1;
+}
+
+.carta:hover{
+    width: 600px;
+    height: 700px;
+}
+
+
+footer p{
+    margin-bottom: 0;
+    color: whitesmoke;
+}
